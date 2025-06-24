@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #ff6600;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #cc5200;
+        }
+        .section {
+            padding: 100px 50px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .home {
+            background: url('https://source.unsplash.com/1600x900/?food') no-repeat center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .services, .food-variety, .about {
+            background-color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
+                let sections = document.querySelectorAll(".section");
+                let navLinks = document.querySelectorAll(".navbar a");
+                
+                sections.forEach(sec => {
+                    let top = window.scrollY;
+                    let offset = sec.offsetTop - 100;
+                    let height = sec.offsetHeight;
+                    let id = sec.getAttribute("id");
+                    
+                    if (top >= offset && top < offset + height) {
+                        navLinks.forEach(link => {
+                            link.classList.remove("active");
+                            document.querySelector(".navbar a[href*=" + id + "]").classList.add("active");
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#food-variety">Food Variety</a>
+    </div>
+    
+    <div id="home" class="section home">
+        Welcome to Delicious Bites! Experience the best flavors in town.
+    </div>
+    
+    <div id="about" class="section about">
+        <h2>About Us</h2>
+        <p class="content">At Delicious Bites, we take pride in crafting exceptional culinary experiences. Our chefs use the freshest ingredients to prepare a variety of dishes that cater to all taste buds. Established in 2010, we have been serving happiness with every meal. Our passion for food drives us to create unique and delicious offerings, ensuring that each bite is memorable.</p>
+    </div>
+    
+    <div id="services" class="section services">
+        <h2>Our Services</h2>
+        <p class="content">We offer a wide range of services to enhance your dining experience. Enjoy our cozy dine-in facility, opt for a quick takeaway, or have our delicious meals delivered to your doorstep. We also specialize in catering services for events, ensuring that your guests enjoy gourmet delights crafted with precision. Whether it's a birthday, wedding, or corporate event, we provide customized menus to suit every occasion.</p>
+    </div>
+    
+    <div id="food-variety" class="section food-variety">
+        <h2>Food Variety</h2>
+<p class="content">Our menu is a delightful mix of flavors from around the world. From sizzling starters to hearty main courses and decadent desserts, we offer a vast selection of dishes. Our chefs specialize in vegetarian, non-vegetarian, and vegan cuisines, ensuring there is something for everyone. Try our signature dishes, seasonal specials, and fusion delights that bring together the best of different culinary traditions.</p>
+    </div>
+</body>
+</html>
