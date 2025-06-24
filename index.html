@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="./asset/images/logo-dark.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+
+    
+</head>
+<body>
+    <div class="top">
+        <div class="navbar">
+            <ul id="menubars" >
+                <li class="menu" onclick="home()"><a class="active" href="#banner">home</a></li>
+                <li class="menu"  onclick="about()" ><a href="#service">about me</a> </li>
+                <li class="menu" onclick="skills()"><a href="#skillsbg">skills</a></li>
+                <li class="menu" onclick="qualification()"><a href="#education">qualification</a></li>
+                <li class="menu" onclick="projects()"><a href="#projectbg">projects</a></li>
+                <li class="menu" onclick="hireme()"><a href="#freelancebg">hire me</a></li>
+                <li class="menu" onclick="contact()"><a href="#contactform-bg">contact</a></li>
+            </ul>
+            <button class="navbutton" >let's talk</button>
+        </div>
+    </div>
+    <!-- TOP ENDS  -->
+    
+    <!-- BANNER STARTS -->
+     <div id="banner"  class="banner-sec  section ">
+        <img src="./asset/images/pexels-edward-jenner-4252672.jpg" class="banner-image" alt="noimg" width="100%" height="100%">
+       <div class="bannercontent">
+        <div class="banner-text-sec">
+            <p class="text1">hey ! i am <br> <span class="name-text">venkatraja.j.g</span></p>
+    
+            <p class="text2">i am full stack  web developer. my expertise is in creating  & designing websites, mobile apps, static websites, blogs,
+                 portfolios and desktop applications.A passionate web developer with a keen eye for design and a strong foundation in front-end and
+                  back-end technologies, I bring innovative solutions to life through clean, efficient code </p>
+            <!-- <div class=`"banner-button">
+               
+                <div class="icon1">
+                <a target="_blank" class="iconbg" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon1">
+                    <a  class="iconbg" target="_blank" href="https://wa.me/9344105077?text= hai "><i class="fa-brands fa-whatsapp call-icon"></i> </a>         
+                </div>
+                <div class="icon1">
+                <a class="iconbg" target="_blank" href="https://x.com/?lang=en&mx=2"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="icon1">
+                <a class="iconbg" target="_blank" href="https://www.linkedin.com/in/venkatraja-webdev"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div> -->
+            <div >
+                <a target="_blank" href="https://www.t2ll.com/smsRedirect.aspx/?phoneNumber=9344105077&msg=welcome" class="contact-btn">for direct SMS <i class="fa-solid fa-arrow-right arrow-icon"></i></a>
+            </div>
+            
+        </div>
+        <div class="banner-image-sec">
+        <img src="./asset/images/picc.jpeg" alt="noimg" class="bannerimage1" width="100%" height="380px" >
+        </div>
+        </div>
+     </div>
+
+
+    <!-- BANNER ENDS -->
+    <!-- service starts  -->
+      <div id="service"   class="servicebg  section ">
+        <p class="service-head1"> about me</p>
+        <p class="service-text1">my intoduction</p>
+      
+        <div class="about-para">
+            <p class="about-text2">
+            Hello! I'm <b> venkatraja. J.G </b> , a passionate web developer with a focus on creating interactive and user-friendly websites and 
+            applications. With a strong background in both front-end and back-end development, I enjoy transforming complex
+            problems into elegant solutions. I thrive in environments where I can continuously learn and adapt to the 
+            latest technologies and best practices in the development world. <br>
+            <b> Front-End Development </b> is where my creativity meets technical skill. I use <b> HTML, CSS, </b> and <b> JavaScript </b> to
+            build responsive, user-friendly interfaces. My expertise in <b> React </b> and <b> Vue.js </b> allows me to create
+            dynamic, single-page applications (SPAs) with smooth user interactions and real-time data updates.
+            </p>
+
+            <div class="about-para2">
+                <p class="about-text3"><span class="about-num">10 +</span> <br> projects</p>
+                <p class="about-text3"><span class="about-num">03 +</span> <br> months <br> experiance</p>
+                <div class="about-text4">
+                <a target="_blank"  href="./asset/images/venkatraja_resume (1).pdf" class="downloadfile">download.cv</a>
+                </div>
+            </div>
+            <!-- <a href="./asset/images/venkatraja_resume (1).pdf">download.cv</a> -->
+        </div>
+      </div>
+     <!-- service ends  -->
+
+      <!-- skill starts  -->
+       <div  id ="skillsbg"  class="section ">
+        <p class="service-head1"> skills</p>
+        <p class="service-text1">my technical level</p>
+        <div class="skill-head2">
+            <div>
+            <p class="lang-text" onclick="dropdown()" >programing languages<i id="langicon" class="fa-solid fa-chevron-up"></i></p>
+            <div id="langdropdown">
+                 
+                <ul>
+                    <li class="lang-text2">html</li>
+                    <li class="lang-text2">css</li>
+                    <li class="lang-text2">bootstrap</li>
+                    <li class="lang-text2">javascript</li>
+                </ul>
+           
+
+            </div> 
+        </div>
+        
+        <div>
+            <p class="tech-text" onclick="droptech()" >technologies<i id="techicon" class="fa-solid fa-chevron-up"></i></p>
+            <div id="techdropdown">
+                 
+                <ul>
+                    <li class="tech-text2">GIT</li>
+                    <li class="tech-text2">figma</li>
+                    <li class="tech-text2">adobe XD</li>
+                    <li class="tech-text2">technical SEO</li>
+                </ul>
+            </div> 
+        </div>
+        </div>
+       </div>
+      <!-- skills ends  -->
+
+      <!-- education starts  -->
+       <div id="education"  class="education-bg  section ">
+        <p class="service-head1"> qualification</p>
+       
+        <p class="service-text1">my personal journey</p>
+        <div class="education-sec">
+            <div class="markline">
+            <div class="dot">
+            </div> 
+            <div class="line">
+            </div>
+            <div class="dot">
+            </div>
+            <div class="line">
+            </div>
+            <div class="dot">
+            </div>
+            <div class="line">
+            </div>
+            <div class="dot">
+            </div>
+            </div>
+            <div class="content-sec" >
+                <div class="content-sec1">
+                    <p class="edu-txt1">B.Sc (Information Technology) - bharathidashan university </p>
+                    <p class="edu-txt2"><i class="fa-solid fa-calendar-days edu-icon"></i>(pursing) , tiruchirappalli</p>
+                </div>
+                <div class="content-sec1">
+                    <p class="edu-txt1">diploma in pharmacy - JKKMMRF College of pharmacy </p>
+                    <p class="edu-txt2"><i class="fa-solid fa-calendar-days edu-icon"></i>2018 - 2020 , namakkal</p>
+                </div>
+                <div class="content-sec1">
+                    <p class="edu-txt1">HSC - SRV hr.sec school </p>
+                    <p class="edu-txt2"><i class="fa-solid fa-calendar-days edu-icon"></i>2016 - 2018 , salem</p>
+                </div>
+                <div class="content-sec1">
+                    <p class="edu-txt1">SSLC - sri nachiyar matriculation school</p>
+                    <p class="edu-txt2"><i class="fa-solid fa-calendar-days edu-icon"></i>2016 , salem</p>
+                </div>
+            </div>
+        </div>
+       </div>
+
+      <!-- education ends  -->
+
+      <!-- project starts  -->
+       <div id="projectbg"  class="section ">
+        <p class="service-head1">projects</p>
+        <p class="service-text1">most recent work</p>
+        <div class="project-sec">
+            <div class="project-buttons">
+                <button class="pro-btn1" onclick="allfun()">all</button>
+                <button class="pro-btn2" onclick="ecommerce()">e-commerce</button>
+                <button class="pro-btn3" onclick="trip()">trip</button>
+                <button class="pro-btn4" onclick="fashion()">fashion</button>
+            </div>
+            <div class="image-sec">
+                <div id="fashid">
+                <img src="./asset/images/project image 9.png"  alt="no-img" width="100%" height="200px">
+                </div>
+                <div id="fash1id">
+                    <img src="./asset/images/project image (2).png"  alt="no-img" width="100%" height="200px">
+                </div>
+                <div id="ecomid">
+                    <img src="./asset/images/project image (8).png"  alt="no-img" width="100%" height="200px">
+                </div>
+            </div>
+            <div class="image-sec">
+                <div id="allid">
+                    <img src="./asset/images/project image (4).png"  alt="no-img" width="100%" height="200px">
+                </div>
+                <div id="tripid">
+                    <img src="./asset/images/project image (3).png"  alt="no-img" width="100%" height="200px">
+                </div>
+                <div id="trip1id">
+                <img src="./asset/images/project image (6).png"  alt="no-img" width="100%" height="200px">
+                </div>
+            </div>
+            </div>
+        </div>
+       </div>
+
+
+      <!-- project ends -->
+
+
+      <!-- freelance starts  -->
+       <div id="freelancebg"  class="section ">
+       <div class="freelance-imagebg">
+        <p class="freelance-heading1">i'm <span class="freelance-text2">available</span> for freelancing</p>
+        <p class="freelance-para1"> "Let's collaborate to bring your vision to life with innovative and tailored solutions."</p>
+        <button  class="hiring-btn">hire me</button>
+        </div>
+       </div>
+
+      <!-- freelance ends  -->
+
+      <!-- contact form starts  -->
+
+       <div id="contactform-bg"  class="section ">
+        <div class="contact-form-sec">
+            <div class="form-sec1">
+                <img src="./asset/images/form - image.jpg"  class="form-image" alt="no-img" width="100%" height="100%">
+                <button class="enquiry-btn">for enquiry</button>
+
+            </div>
+            <div class="form-sec2">
+                <p class="form-text1">stay connected</p>
+                <div>
+                    
+                    <div class="form-details">    
+                        <input type="text" class="mailtext" placeholder = "enter your name">
+                        <i class="fa-solid fa-user user-icons" ></i>
+                    </div>
+                    <div class="form-details">    
+                        <input type="email" class="mailtext" placeholder = "enter your e-mail">
+                        <i class="fa-solid fa-envelope user-icons"></i>
+                    </div>
+
+                    <div class="form-details">    
+                        <input type="subject" class="mailtext" placeholder = "subject">
+                        <i class="fa-solid fa-folder user-icons"></i>
+                    </div>
+                    <div class="form-details2">
+                        <textarea name="" id="message" placeholder="message"></textarea>
+                    </div>
+                    <button class="message-btn"> 
+                        send message                    
+                    </button>
+                </div>
+
+            </div>
+        </div>
+       </div>
+
+
+      <!-- contact form ends  -->
+
+      <!-- footer starts  -->
+       <div class="footerbg">   
+        <div class="footer-logo-sec">
+
+        </div>
+        <div class="footer-btns">
+            <div class="banner-button">
+                <!-- <button class="banner-button1">learn more</button>
+                <button class="banner-button2">hire me</button> -->
+                <div class="icon1">
+                <a target="_blank" class="iconbg" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon1">
+                    <a  class="iconbg" target="_blank" href="https://wa.me/9344105077?text= hai "><i class="fa-brands fa-whatsapp call-icon"></i> </a>         
+                </div>
+                <div class="icon1">
+                <a class="iconbg" target="_blank" href="https://x.com/?lang=en&mx=2"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="icon1">
+                <a class="iconbg" target="_blank" href="https://www.linkedin.com/in/venkatraja-webdev"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon1">
+                    <a class="iconbg" target="_blank" href="http://m.me/venkatjg"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-mail-sec">
+            
+
+
+        </div>
+        
+
+       </div>
+
+
+      <!-- footer ends  -->
+
+
+      <!-- copyrights starts  -->
+<div class=" copyrights">
+    <div class="container pt-3  ">
+      <div class="d-flex justify-content-between">
+    <div >
+      <p>All copyrights reserved @ 2024</p>
+    
+    </div>
+    <div >
+    <p>Training and Mentorship by: <b> <a href="https://atozerv.com/" class="copyrights-link" target="_blank">ATOZERV INDIA PVT LTD.</a> </b> </p>
+    </div>
+    <div>
+      <p> Designed and Developed by: <b class=" copyrights-name"> J.G.VENKATRAJA.  </b> </p>
+    
+    </div>
+    </div>
+    </div>
+  
+  
+  </div>
+  
+  
+  
+  <!-- copyright ends  -->
+  
+      <script src="./asset/javascript/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+</script>
+</body>
+</html>
